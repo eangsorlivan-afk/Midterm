@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <style>
+        .maincourse{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .computer{
+            width: 26%;
+            padding: 20px;
+            background-color: lightgrey;
+            border: 1px solid;
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 8px gray;
+            justify-content: center;
+        }
+        .computer img{
+            width:500px;
+            height: 450px;
+        }
+        p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:brown;
+        }
+         button{
+            padding: 10px 20px;
+            border: none;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            cursor:grab;
+        }
+        button:hover{
+            background-color:blue   ;
+            transform: rotate(360deg);
+            transition: 2s;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: brown;
+        }
+        footer{
+            background: burlywood;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Our famous Courses</h1>
+    <div class="maincourse">
+    <div class="computer">
+        <h2>Computer Science</h2>
+        <img src="/comp.jpg" alt="">
+        <p>Offer : It covers core topics like algorithms, data structures, software engineering, and programming languages (such as Java, C++, or Python)</p>
+        <p>Price:150$/month</p>
+        <button>Register now</button>
+    </div>
+    <div class="computer">
+        <h2>Data Science</h2>
+        <img src="/data.jpg" alt="">
+        <p>Offer : Teaches the interdisciplinary skills needed to extract actionable insights from raw data. Typical curriculums cover programming (Python, R), statistics, data wrangling, machine learning, and data visualization.</p>
+        <p>Price:220$/month</p>
+        <button>Register now</button>
+    </div>
+    <div class="computer">
+        <h2>Cyber Security</h2>
+        <img src="/cyber.png" alt="">
+        <p>Offer : . It aims to ensure the confidentiality, integrity, and availability of information across personal, enterprise, and national infrastructures.</p>
+        <p>Price:190$/month</p>
+        <button>Register now</button>
+    </div>
+</div>
+<footer>
+    <p>Facebook | Instagram | Twitter</p>
+    <p>&copy; 2026 Design by Eang Sorlivan</p>
+</footer>
+</body>
+</html>

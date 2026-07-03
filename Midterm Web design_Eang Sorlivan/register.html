@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        .container {
+            width: 450px;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+         h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 12px;
+        }
+        .button{
+            width: 30%;
+            height: 30%;
+            object-fit: cover;
+            transition: tranform cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        .button:hover{
+            background-color:brown   ;
+        }
+
+    </style>
+    <body>
+    <div class="container">
+    <h2>Student Registration Form</h2>
+
+    <form>
+
+        <label>Full Name</label>
+        <input type="text" name="fullname" placeholder="Enter your full name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Enter password" required>
+
+        <label>Phone Number</label>
+        <input type="tel" name="phone" placeholder="Enter phone number" required>
+
+        <label>Date of Birth</label>
+        <input type="date" name="dob" required>
+
+        <label>Gender</label>
+        <div class="gender">
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+        </div>
+
+        <label>Course</label>
+        <select name="course" required>
+            <option value="">Select Course</option>
+            <option>Computer Science</option>
+            <option>Data Science</option>
+            <option>Cyber Security</option>
+            <option>Accounting</option>
+            <option>Engineering</option>
+        </select>
+         <label>Address</label>
+        <textarea name="address" rows="4" placeholder="Enter your address"></textarea>
+
+        <p>
+            <input type="checkbox" name="terms" required>
+            I agree to the Terms and Conditions.
+        </p>
+
+        <div class="button">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+</head>
+</body>
+</html>
